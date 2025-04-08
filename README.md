@@ -9,11 +9,11 @@ This implementation is inspired from `einops` but takes it further with **optimi
 
 ## ✨ Benefits
 
-- **Pattern-Based Flexibility**: Transform tensors effortlessly using readable patterns like `'h w c -> (h w) c'` or `'b c h w -> b (h w) c'`.
+- **Pattern-Based Flexibility**: Transform tensors using readable patterns like `'h w c -> (h w) c'` or `'b c h w -> b (h w) c'`.
 - **Broadcasting Magic**: Add new dimensions or expand existing ones without breaking a sweat.
-- **Performance Boost**: Powered by `lru_cache`, it caches operations for lightning-fast repeated calls.
+- **Performance Boost**: Powered by `lru_cache`, it caches operations for fast repeated calls.
 - **Helpful Debugging**: Custom `EinopsError` exceptions provide clear, actionable feedback when something goes wrong.
-- **Unique Design**: Built from the ground up, offering distinct performance and usability advantages.
+- **Unique Design**: Improved performance and usability advantages.
 
 ---
 
@@ -36,7 +36,7 @@ The `rearrange` function is a tensor-transforming wizard that operates in **four
    - **Reshapes**: Delivers the final tensor in the desired shape.
 
 4. **Caching Power**  
-   - Stores parsed patterns and operations in memory, so repeated calls are blazingly fast.
+   - Stores parsed patterns and operations in memory, so repeated calls are fast.
 
 ---
 
