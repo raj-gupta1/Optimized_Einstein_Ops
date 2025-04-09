@@ -25,7 +25,7 @@ The `rearrange` function is a tensor-transforming wizard that operates in **four
    - Takes a pattern like `'h w c -> w h c'` and splits it into **input axes** (`h`, `w`, `c`) and **output axes** (`w`, `h`, `c`).  
    - Understands grouped axes like `(h w)` for advanced reshaping.
 
-2. **Axis Size Magic**  
+2. **Custom Axis Size**  
    - Calculates the size of each axis based on the tensor’s shape.  
    - Supports custom sizes via an optional `axes_lengths` argument (e.g., `h=32, w=32`).
 
@@ -35,7 +35,7 @@ The `rearrange` function is a tensor-transforming wizard that operates in **four
    - **Broadcasts**: Expands or adds dimensions as needed.  
    - **Reshapes**: Delivers the final tensor in the desired shape.
 
-4. **Caching Power**  
+4. **Caching**  
    - Stores parsed patterns and operations in memory, so repeated calls are fast.
 
 ---
